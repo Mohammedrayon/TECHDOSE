@@ -1,0 +1,15 @@
+int majorityElement(int* nums, int n){
+    int l=16,a=0;
+for(int j=0;j<=l;++j){
+        int c=0;
+for(int i=0;i<n;i++){
+    if((nums[i]&(1<<j))>0){
+        c++;
+    }
+}
+if(c>(n/2)){
+    a+=(1<<j);
+}
+}
+return a;
+}
