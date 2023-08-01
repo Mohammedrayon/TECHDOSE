@@ -1,0 +1,16 @@
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        n=len(nums)
+        for i in range(n-1):
+            swap=0
+            for j in range(n-1-i):
+                if(nums[j]>nums[j+1]):
+                    t=nums[j]
+                    nums[j]=nums[j+1]
+                    nums[j+1]=t
+                    swap=1
+            if(swap == 0):
+                return nums
+        return nums        
+
+        
