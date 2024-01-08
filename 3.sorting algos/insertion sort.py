@@ -1,3 +1,4 @@
+nums=[1,2,4,3]
 n=len(nums)
 for i in range(1,n):
     temp=nums[i]
